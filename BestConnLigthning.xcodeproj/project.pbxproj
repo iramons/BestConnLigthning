@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		275260D42C3430B9001F50C2 /* BestConnLigthningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */; };
-		275260D62C3430B9001F50C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260D52C3430B9001F50C2 /* ContentView.swift */; };
 		275260D82C3430BB001F50C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260D72C3430BB001F50C2 /* Assets.xcassets */; };
 		275260DC2C3430BB001F50C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260DB2C3430BB001F50C2 /* Preview Assets.xcassets */; };
 		275260E62C3430BC001F50C2 /* BestConnLigthningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260E52C3430BC001F50C2 /* BestConnLigthningTests.swift */; };
 		275260F02C3430BC001F50C2 /* BestConnLigthningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260EF2C3430BC001F50C2 /* BestConnLigthningUITests.swift */; };
 		275260F22C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260F12C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift */; };
 		275261032C343F0D001F50C2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 275261022C343F0D001F50C2 /* Moya */; };
+		27D11A662C3444880070A2F0 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A652C3444880070A2F0 /* NetworkConfig.swift */; };
+		27D11A682C3445C60070A2F0 /* LightningEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */; };
+		27D11A6D2C3449250070A2F0 /* BestNodeConnectivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A6C2C3449250070A2F0 /* BestNodeConnectivityView.swift */; };
+		27D11A6F2C3449360070A2F0 /* BestConnectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A6E2C3449360070A2F0 /* BestConnectionsViewModel.swift */; };
+		27D11A722C344DC10070A2F0 /* NodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A712C344DC10070A2F0 /* NodeResponse.swift */; };
+		27D11A752C344F250070A2F0 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A742C344F250070A2F0 /* Node.swift */; };
+		27D11A7B2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A7A2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift */; };
+		27D11A802C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */; };
+		27D11A822C3478820070A2F0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27D11A812C3478820070A2F0 /* Localizable.xcstrings */; };
+		27D11A852C347A700070A2F0 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A842C347A700070A2F0 /* LoadingState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +46,6 @@
 /* Begin PBXFileReference section */
 		275260D02C3430B9001F50C2 /* BestConnLigthning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestConnLigthning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningApp.swift; sourceTree = "<group>"; };
-		275260D52C3430B9001F50C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		275260D72C3430BB001F50C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		275260D92C3430BB001F50C2 /* BestConnLigthning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestConnLigthning.entitlements; sourceTree = "<group>"; };
 		275260DB2C3430BB001F50C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,6 +54,16 @@
 		275260EB2C3430BC001F50C2 /* BestConnLigthningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestConnLigthningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		275260EF2C3430BC001F50C2 /* BestConnLigthningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningUITests.swift; sourceTree = "<group>"; };
 		275260F12C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27D11A652C3444880070A2F0 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningEndpoint.swift; sourceTree = "<group>"; };
+		27D11A6C2C3449250070A2F0 /* BestNodeConnectivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectivityView.swift; sourceTree = "<group>"; };
+		27D11A6E2C3449360070A2F0 /* BestConnectionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnectionsViewModel.swift; sourceTree = "<group>"; };
+		27D11A712C344DC10070A2F0 /* NodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeResponse.swift; sourceTree = "<group>"; };
+		27D11A742C344F250070A2F0 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		27D11A7A2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectivityItemView.swift; sourceTree = "<group>"; };
+		27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectityItemInfoView.swift; sourceTree = "<group>"; };
+		27D11A812C3478820070A2F0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		27D11A842C347A700070A2F0 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */,
-				275260D52C3430B9001F50C2 /* ContentView.swift */,
-				275260D72C3430BB001F50C2 /* Assets.xcassets */,
-				275260D92C3430BB001F50C2 /* BestConnLigthning.entitlements */,
+				27D11A772C34564E0070A2F0 /* Domain */,
+				27D11A692C3448930070A2F0 /* DataProvider */,
+				27D11A6B2C3448F40070A2F0 /* Presentation */,
+				27D11A762C3456360070A2F0 /* Resources */,
+				27D11A792C3456680070A2F0 /* Config */,
+				27D11A832C347A560070A2F0 /* Support */,
 				275260DA2C3430BB001F50C2 /* Preview Content */,
 			);
 			path = BestConnLigthning;
@@ -129,6 +150,116 @@
 				275260F12C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift */,
 			);
 			path = BestConnLigthningUITests;
+			sourceTree = "<group>";
+		};
+		27D11A692C3448930070A2F0 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A6A2C3448A20070A2F0 /* Network */,
+				27D11A732C344DC50070A2F0 /* Entity */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		27D11A6A2C3448A20070A2F0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A652C3444880070A2F0 /* NetworkConfig.swift */,
+				27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		27D11A6B2C3448F40070A2F0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A702C34493D0070A2F0 /* BestConnections */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		27D11A702C34493D0070A2F0 /* BestConnections */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A7C2C3477BE0070A2F0 /* View */,
+				27D11A7D2C3477C40070A2F0 /* ViewModel */,
+			);
+			path = BestConnections;
+			sourceTree = "<group>";
+		};
+		27D11A732C344DC50070A2F0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A712C344DC10070A2F0 /* NodeResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		27D11A762C3456360070A2F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				275260D72C3430BB001F50C2 /* Assets.xcassets */,
+				27D11A812C3478820070A2F0 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27D11A772C34564E0070A2F0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A782C3456550070A2F0 /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		27D11A782C3456550070A2F0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A742C344F250070A2F0 /* Node.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		27D11A792C3456680070A2F0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				275260D92C3430BB001F50C2 /* BestConnLigthning.entitlements */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		27D11A7C2C3477BE0070A2F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A6C2C3449250070A2F0 /* BestNodeConnectivityView.swift */,
+				27D11A7E2C3477DB0070A2F0 /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27D11A7D2C3477C40070A2F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A6E2C3449360070A2F0 /* BestConnectionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		27D11A7E2C3477DB0070A2F0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A7A2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift */,
+				27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		27D11A832C347A560070A2F0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A842C347A700070A2F0 /* LoadingState.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +374,7 @@
 			files = (
 				275260DC2C3430BB001F50C2 /* Preview Assets.xcassets in Resources */,
 				275260D82C3430BB001F50C2 /* Assets.xcassets in Resources */,
+				27D11A822C3478820070A2F0 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +399,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275260D62C3430B9001F50C2 /* ContentView.swift in Sources */,
 				275260D42C3430B9001F50C2 /* BestConnLigthningApp.swift in Sources */,
+				27D11A662C3444880070A2F0 /* NetworkConfig.swift in Sources */,
+				27D11A852C347A700070A2F0 /* LoadingState.swift in Sources */,
+				27D11A7B2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift in Sources */,
+				27D11A722C344DC10070A2F0 /* NodeResponse.swift in Sources */,
+				27D11A6D2C3449250070A2F0 /* BestNodeConnectivityView.swift in Sources */,
+				27D11A6F2C3449360070A2F0 /* BestConnectionsViewModel.swift in Sources */,
+				27D11A682C3445C60070A2F0 /* LightningEndpoint.swift in Sources */,
+				27D11A802C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift in Sources */,
+				27D11A752C344F250070A2F0 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BestConnLigthning/BestConnLigthning.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BestConnLigthning/Config/BestConnLigthning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BestConnLigthning/Preview Content\"";
@@ -462,7 +602,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BestConnLigthning/BestConnLigthning.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BestConnLigthning/Config/BestConnLigthning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BestConnLigthning/Preview Content\"";
