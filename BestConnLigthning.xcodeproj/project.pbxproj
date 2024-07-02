@@ -14,6 +14,7 @@
 		275260E62C3430BC001F50C2 /* BestConnLigthningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260E52C3430BC001F50C2 /* BestConnLigthningTests.swift */; };
 		275260F02C3430BC001F50C2 /* BestConnLigthningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260EF2C3430BC001F50C2 /* BestConnLigthningUITests.swift */; };
 		275260F22C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260F12C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift */; };
+		275261032C343F0D001F50C2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 275261022C343F0D001F50C2 /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275261032C343F0D001F50C2 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = BestConnLigthning;
+			packageProductDependencies = (
+				275261022C343F0D001F50C2 /* Moya */,
+			);
 			productName = BestConnLigthning;
 			productReference = 275260D02C3430B9001F50C2 /* BestConnLigthning.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 275260C72C3430B9001F50C2;
+			packageReferences = (
+				275261012C343F0D001F50C2 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 275260D12C3430B9001F50C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -617,6 +625,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		275261012C343F0D001F50C2 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		275261022C343F0D001F50C2 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 275261012C343F0D001F50C2 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 275260C82C3430B9001F50C2 /* Project object */;
 }
