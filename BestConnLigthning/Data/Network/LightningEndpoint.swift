@@ -14,12 +14,12 @@ enum LightningEndpoint {
 
 extension LightningEndpoint: TargetType {
 
-    var baseURL: URL { .init(string: "https://mempool.space/api")! }
+    var baseURL: URL { .init(string: "https://mempool.space/api/v1")! }
 
     var path: String {
         switch self {
         case .rankingsByConnectivity:
-            return "v1/lightning/nodes/rankings/connectivity"
+            return "lightning/nodes/rankings/connectivity"
         }
     }
     

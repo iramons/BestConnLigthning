@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2717D9402C35A4F400474F95 /* LightningRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717D93F2C35A4F400474F95 /* LightningRepository.swift */; };
+		2717D9422C35A67000474F95 /* LightningRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717D9412C35A67000474F95 /* LightningRemoteRepository.swift */; };
+		2717D9472C35A74900474F95 /* LightningRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717D9462C35A74900474F95 /* LightningRemoteDataSource.swift */; };
+		2717D94A2C35ABE500474F95 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 2717D9492C35ABE500474F95 /* Resolver */; };
+		2717D94C2C35AC8C00474F95 /* Resolver+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717D94B2C35AC8C00474F95 /* Resolver+Register.swift */; };
+		2717D94F2C35B17C00474F95 /* Moya+Async+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717D94E2C35B17C00474F95 /* Moya+Async+Ext.swift */; };
 		275260D42C3430B9001F50C2 /* BestConnLigthningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */; };
 		275260D82C3430BB001F50C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260D72C3430BB001F50C2 /* Assets.xcassets */; };
 		275260DC2C3430BB001F50C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260DB2C3430BB001F50C2 /* Preview Assets.xcassets */; };
@@ -16,16 +22,16 @@
 		275261032C343F0D001F50C2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 275261022C343F0D001F50C2 /* Moya */; };
 		27D11A662C3444880070A2F0 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A652C3444880070A2F0 /* NetworkConfig.swift */; };
 		27D11A682C3445C60070A2F0 /* LightningEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */; };
-		27D11A6D2C3449250070A2F0 /* BestNodeConnectivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A6C2C3449250070A2F0 /* BestNodeConnectivityView.swift */; };
-		27D11A6F2C3449360070A2F0 /* BestConnectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A6E2C3449360070A2F0 /* BestConnectionsViewModel.swift */; };
+		27D11A6D2C3449250070A2F0 /* BestNodesByConnectivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A6C2C3449250070A2F0 /* BestNodesByConnectivityView.swift */; };
+		27D11A6F2C3449360070A2F0 /* BestNodeConnectivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A6E2C3449360070A2F0 /* BestNodeConnectivityViewModel.swift */; };
 		27D11A722C344DC10070A2F0 /* NodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A712C344DC10070A2F0 /* NodeResponse.swift */; };
 		27D11A752C344F250070A2F0 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A742C344F250070A2F0 /* Node.swift */; };
-		27D11A7B2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A7A2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift */; };
-		27D11A802C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */; };
+		27D11A7B2C3465B90070A2F0 /* BestNodesByConnectivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A7A2C3465B90070A2F0 /* BestNodesByConnectivityItemView.swift */; };
+		27D11A802C3477FA0070A2F0 /* BestNodesByConnectityItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A7F2C3477FA0070A2F0 /* BestNodesByConnectityItemInfoView.swift */; };
 		27D11A822C3478820070A2F0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27D11A812C3478820070A2F0 /* Localizable.xcstrings */; };
-		27D11A852C347A700070A2F0 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A842C347A700070A2F0 /* LoadingState.swift */; };
+		27D11A852C347A700070A2F0 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A842C347A700070A2F0 /* ViewState.swift */; };
 		27D11A882C347D640070A2F0 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 27D11A872C347D640070A2F0 /* Shimmer */; };
-		27D11A8A2C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A892C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift */; };
+		27D11A8A2C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A892C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift */; };
 		27D11A8C2C34BD270070A2F0 /* Cryptocurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */; };
 		27D11A8E2C34CB5D0070A2F0 /* Locales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A8D2C34CB5D0070A2F0 /* Locales.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2717D93F2C35A4F400474F95 /* LightningRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRepository.swift; sourceTree = "<group>"; };
+		2717D9412C35A67000474F95 /* LightningRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRemoteRepository.swift; sourceTree = "<group>"; };
+		2717D9462C35A74900474F95 /* LightningRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRemoteDataSource.swift; sourceTree = "<group>"; };
+		2717D94B2C35AC8C00474F95 /* Resolver+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Register.swift"; sourceTree = "<group>"; };
+		2717D94E2C35B17C00474F95 /* Moya+Async+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Async+Ext.swift"; sourceTree = "<group>"; };
 		275260D02C3430B9001F50C2 /* BestConnLigthning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestConnLigthning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningApp.swift; sourceTree = "<group>"; };
 		275260D72C3430BB001F50C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,15 +71,15 @@
 		275260F12C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		27D11A652C3444880070A2F0 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningEndpoint.swift; sourceTree = "<group>"; };
-		27D11A6C2C3449250070A2F0 /* BestNodeConnectivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectivityView.swift; sourceTree = "<group>"; };
-		27D11A6E2C3449360070A2F0 /* BestConnectionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnectionsViewModel.swift; sourceTree = "<group>"; };
+		27D11A6C2C3449250070A2F0 /* BestNodesByConnectivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodesByConnectivityView.swift; sourceTree = "<group>"; };
+		27D11A6E2C3449360070A2F0 /* BestNodeConnectivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectivityViewModel.swift; sourceTree = "<group>"; };
 		27D11A712C344DC10070A2F0 /* NodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeResponse.swift; sourceTree = "<group>"; };
 		27D11A742C344F250070A2F0 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		27D11A7A2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectivityItemView.swift; sourceTree = "<group>"; };
-		27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectityItemInfoView.swift; sourceTree = "<group>"; };
+		27D11A7A2C3465B90070A2F0 /* BestNodesByConnectivityItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodesByConnectivityItemView.swift; sourceTree = "<group>"; };
+		27D11A7F2C3477FA0070A2F0 /* BestNodesByConnectityItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodesByConnectityItemInfoView.swift; sourceTree = "<group>"; };
 		27D11A812C3478820070A2F0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		27D11A842C347A700070A2F0 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
-		27D11A892C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectivityLoadingView.swift; sourceTree = "<group>"; };
+		27D11A842C347A700070A2F0 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		27D11A892C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodesByConnectivityLoadingView.swift; sourceTree = "<group>"; };
 		27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrencies.swift; sourceTree = "<group>"; };
 		27D11A8D2C34CB5D0070A2F0 /* Locales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locales.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2717D94A2C35ABE500474F95 /* Resolver in Frameworks */,
 				27D11A882C347D640070A2F0 /* Shimmer in Frameworks */,
 				275261032C343F0D001F50C2 /* Moya in Frameworks */,
 			);
@@ -100,6 +112,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2717D93E2C35A4CA00474F95 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2717D9452C35A72E00474F95 /* Lightning */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2717D9432C35A71900474F95 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2717D9442C35A72300474F95 /* Lightning */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		2717D9442C35A72300474F95 /* Lightning */ = {
+			isa = PBXGroup;
+			children = (
+				2717D9462C35A74900474F95 /* LightningRemoteDataSource.swift */,
+			);
+			path = Lightning;
+			sourceTree = "<group>";
+		};
+		2717D9452C35A72E00474F95 /* Lightning */ = {
+			isa = PBXGroup;
+			children = (
+				2717D93F2C35A4F400474F95 /* LightningRepository.swift */,
+				2717D9412C35A67000474F95 /* LightningRemoteRepository.swift */,
+			);
+			path = Lightning;
+			sourceTree = "<group>";
+		};
+		2717D94D2C35AC9000474F95 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				2717D94B2C35AC8C00474F95 /* Resolver+Register.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		2717D9502C35B4A700474F95 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2717D94E2C35B17C00474F95 /* Moya+Async+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2717D9512C35B4B100474F95 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				27D11A842C347A700070A2F0 /* ViewState.swift */,
+				27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		275260C72C3430B9001F50C2 = {
 			isa = PBXGroup;
 			children = (
@@ -124,9 +194,10 @@
 			isa = PBXGroup;
 			children = (
 				275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */,
-				27D11A692C3448930070A2F0 /* DataProvider */,
+				27D11A692C3448930070A2F0 /* Data */,
 				27D11A772C34564E0070A2F0 /* Domain */,
 				27D11A6B2C3448F40070A2F0 /* Presentation */,
+				2717D94D2C35AC9000474F95 /* DI */,
 				27D11A762C3456360070A2F0 /* Resources */,
 				27D11A792C3456680070A2F0 /* Config */,
 				27D11A832C347A560070A2F0 /* Support */,
@@ -160,13 +231,15 @@
 			path = BestConnLigthningUITests;
 			sourceTree = "<group>";
 		};
-		27D11A692C3448930070A2F0 /* DataProvider */ = {
+		27D11A692C3448930070A2F0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				27D11A6A2C3448A20070A2F0 /* Network */,
+				2717D9432C35A71900474F95 /* DataSource */,
+				2717D93E2C35A4CA00474F95 /* Repository */,
 				27D11A732C344DC50070A2F0 /* Entity */,
 			);
-			path = DataProvider;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		27D11A6A2C3448A20070A2F0 /* Network */ = {
@@ -181,18 +254,18 @@
 		27D11A6B2C3448F40070A2F0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				27D11A702C34493D0070A2F0 /* BestConnections */,
+				27D11A702C34493D0070A2F0 /* BestNodesByConnectivity */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		27D11A702C34493D0070A2F0 /* BestConnections */ = {
+		27D11A702C34493D0070A2F0 /* BestNodesByConnectivity */ = {
 			isa = PBXGroup;
 			children = (
 				27D11A7C2C3477BE0070A2F0 /* View */,
 				27D11A7D2C3477C40070A2F0 /* ViewModel */,
 			);
-			path = BestConnections;
+			path = BestNodesByConnectivity;
 			sourceTree = "<group>";
 		};
 		27D11A732C344DC50070A2F0 /* Entity */ = {
@@ -240,7 +313,7 @@
 		27D11A7C2C3477BE0070A2F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				27D11A6C2C3449250070A2F0 /* BestNodeConnectivityView.swift */,
+				27D11A6C2C3449250070A2F0 /* BestNodesByConnectivityView.swift */,
 				27D11A7E2C3477DB0070A2F0 /* Components */,
 			);
 			path = View;
@@ -249,7 +322,7 @@
 		27D11A7D2C3477C40070A2F0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				27D11A6E2C3449360070A2F0 /* BestConnectionsViewModel.swift */,
+				27D11A6E2C3449360070A2F0 /* BestNodeConnectivityViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -257,9 +330,9 @@
 		27D11A7E2C3477DB0070A2F0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				27D11A7A2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift */,
-				27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */,
-				27D11A892C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift */,
+				27D11A7A2C3465B90070A2F0 /* BestNodesByConnectivityItemView.swift */,
+				27D11A7F2C3477FA0070A2F0 /* BestNodesByConnectityItemInfoView.swift */,
+				27D11A892C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -267,8 +340,8 @@
 		27D11A832C347A560070A2F0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				27D11A842C347A700070A2F0 /* LoadingState.swift */,
-				27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */,
+				2717D9512C35B4B100474F95 /* Enum */,
+				2717D9502C35B4A700474F95 /* Extension */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -292,6 +365,7 @@
 			packageProductDependencies = (
 				275261022C343F0D001F50C2 /* Moya */,
 				27D11A872C347D640070A2F0 /* Shimmer */,
+				2717D9492C35ABE500474F95 /* Resolver */,
 			);
 			productName = BestConnLigthning;
 			productReference = 275260D02C3430B9001F50C2 /* BestConnLigthning.app */;
@@ -368,6 +442,7 @@
 			packageReferences = (
 				275261012C343F0D001F50C2 /* XCRemoteSwiftPackageReference "Moya" */,
 				27D11A862C347D640070A2F0 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
+				2717D9482C35ABE500474F95 /* XCRemoteSwiftPackageReference "Resolver" */,
 			);
 			productRefGroup = 275260D12C3430B9001F50C2 /* Products */;
 			projectDirPath = "";
@@ -413,16 +488,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				275260D42C3430B9001F50C2 /* BestConnLigthningApp.swift in Sources */,
+				2717D94C2C35AC8C00474F95 /* Resolver+Register.swift in Sources */,
 				27D11A662C3444880070A2F0 /* NetworkConfig.swift in Sources */,
-				27D11A852C347A700070A2F0 /* LoadingState.swift in Sources */,
-				27D11A7B2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift in Sources */,
+				27D11A852C347A700070A2F0 /* ViewState.swift in Sources */,
+				2717D94F2C35B17C00474F95 /* Moya+Async+Ext.swift in Sources */,
+				27D11A7B2C3465B90070A2F0 /* BestNodesByConnectivityItemView.swift in Sources */,
+				2717D9402C35A4F400474F95 /* LightningRepository.swift in Sources */,
+				2717D9472C35A74900474F95 /* LightningRemoteDataSource.swift in Sources */,
 				27D11A722C344DC10070A2F0 /* NodeResponse.swift in Sources */,
+				2717D9422C35A67000474F95 /* LightningRemoteRepository.swift in Sources */,
 				27D11A8C2C34BD270070A2F0 /* Cryptocurrencies.swift in Sources */,
-				27D11A6D2C3449250070A2F0 /* BestNodeConnectivityView.swift in Sources */,
-				27D11A6F2C3449360070A2F0 /* BestConnectionsViewModel.swift in Sources */,
+				27D11A6D2C3449250070A2F0 /* BestNodesByConnectivityView.swift in Sources */,
+				27D11A6F2C3449360070A2F0 /* BestNodeConnectivityViewModel.swift in Sources */,
 				27D11A682C3445C60070A2F0 /* LightningEndpoint.swift in Sources */,
-				27D11A8A2C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift in Sources */,
-				27D11A802C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift in Sources */,
+				27D11A8A2C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift in Sources */,
+				27D11A802C3477FA0070A2F0 /* BestNodesByConnectityItemInfoView.swift in Sources */,
 				27D11A8E2C34CB5D0070A2F0 /* Locales.swift in Sources */,
 				27D11A752C344F250070A2F0 /* Node.swift in Sources */,
 			);
@@ -783,6 +863,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2717D9482C35ABE500474F95 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
 		275261012C343F0D001F50C2 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -802,6 +890,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2717D9492C35ABE500474F95 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2717D9482C35ABE500474F95 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
 		275261022C343F0D001F50C2 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 275261012C343F0D001F50C2 /* XCRemoteSwiftPackageReference "Moya" */;

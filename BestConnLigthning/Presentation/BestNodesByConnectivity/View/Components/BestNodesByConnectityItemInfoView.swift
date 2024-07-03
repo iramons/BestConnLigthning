@@ -1,5 +1,5 @@
 //
-//  BestNodeConnectityItemInfoView.swift
+//  BestNodesByConnectityItemInfoView.swift
 //  BestConnLigthning
 //
 //  Created by Ramon Santos on 02/07/24.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-// MARK: - BestNodeConnectityItemInfoView
+// MARK: - BestNodesByConnectityItemInfoView
 
-struct BestNodeConnectityItemInfoView: View {
+struct BestNodesByConnectityItemInfoView: View {
 
     @State var title: String
     @State var value: String?
@@ -28,5 +28,5 @@ struct BestNodeConnectityItemInfoView: View {
 // MARK: - Preview
 
 #Preview {
-    BestNodeConnectityItemInfoView(title: "title", value: "value")
+    BestNodesByConnectityItemInfoView(title: "title", value: "value")
 }
