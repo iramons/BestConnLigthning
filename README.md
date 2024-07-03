@@ -1,15 +1,15 @@
 # BestConnLigthning
 App maked in SwiftUI to list the 100 best bitcoin nodes connectivity
 
-##Tecnologies used:
+## Tecnologies used:
 
-SwiftUI
-Clean Archictecture
-MVVM
-XCTests
-Moya (Network)
-Resolver (Dependency Injection)
-Shimmer (Custom Loading)
+- SwiftUI
+- Clean Archictecture
+- MVVM
+- XCTests
+- Moya (Network)
+- Resolver (Dependency Injection)
+- Shimmer (Custom Loading)
 
 
 ## Build tools & versions used
