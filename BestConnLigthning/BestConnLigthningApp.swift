@@ -11,7 +11,7 @@ import SwiftUI
 struct BestConnLigthningApp: App {
     var body: some Scene {
         WindowGroup {
-            BestNodeConnectivityView()
+            BestNodesByConnectivityView()
         }
     }
 }

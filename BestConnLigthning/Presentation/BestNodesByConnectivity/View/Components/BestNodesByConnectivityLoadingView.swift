@@ -1,5 +1,5 @@
 //
-//  BestNodeConnectivityLoadingView.swift
+//  BestNodesByConnectivityLoadingView.swift
 //  BestConnLigthning
 //
 //  Created by Ramon Santos on 02/07/24.
@@ -8,16 +8,16 @@
 import SwiftUI
 import Shimmer
 
-// MARK: BestNodeConnectivityLoadingView
+// MARK: BestNodesByConnectivityLoadingView
 
-struct BestNodeConnectivityLoadingView: View {
+struct BestNodesByConnectivityLoadingView: View {
 
     var body: some View {
         NavigationStack {
             VStack(spacing: 8) {
                 Spacer(minLength: 110)
                 ForEach(1..<4) { _ in
-                    BestNodeConnectivityItemView(node: representableNode)
+                    BestNodesByConnectivityItemView(node: representableNode)
                         .frame(height: 260)
                         .padding(.horizontal, 20)
                         .redacted(reason: .placeholder)
@@ -28,7 +28,7 @@ struct BestNodeConnectivityLoadingView: View {
     }
 }
 
-private extension BestNodeConnectivityLoadingView {
+private extension BestNodesByConnectivityLoadingView {
     var representableNode: Node {
         return .init(
             publicKey: "-------------",
@@ -48,5 +48,5 @@ private extension BestNodeConnectivityLoadingView {
 // MARK: - Preview
 
 #Preview {
-    BestNodeConnectivityLoadingView()
+    BestNodesByConnectivityLoadingView()
 }

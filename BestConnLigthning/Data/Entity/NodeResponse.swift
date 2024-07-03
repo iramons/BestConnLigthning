@@ -7,8 +7,6 @@
 
 import Foundation
 
-typealias NodesResponse = [NodeResponse]
-
 // MARK: - NodeResponse
 
 struct NodeResponse: Codable {
@@ -25,11 +23,20 @@ struct NodeResponse: Codable {
     let subdivision: String?
 
     enum CodingKeys: String, CodingKey {
-        case publicKey, alias, channels, capacity, firstSeen, updatedAt, city, country
+        case publicKey
+        case alias
+        case channels
+        case capacity
+        case firstSeen
+        case updatedAt
+        case city
+        case country
         case isoCode = "iso_code"
         case subdivision
     }
 }
+
+typealias NodesResponse = [NodeResponse]
 
 extension NodeResponse {
     func toNode() -> Node {

@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Node: Identifiable {
-    let id = UUID()
+struct Node {
     let publicKey: String
     let alias: String
     let channels: Double
@@ -20,6 +19,8 @@ struct Node: Identifiable {
     let isoCode: String
     let subdivision: String
 }
+
+typealias Nodes = [Node]
 
 extension Node {
     var bitcoin: Double { capacity / Cryptocurrencies.bitcoin }

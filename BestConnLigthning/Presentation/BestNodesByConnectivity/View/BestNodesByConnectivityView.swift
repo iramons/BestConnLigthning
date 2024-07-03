@@ -1,5 +1,5 @@
 //
-//  BestNodeConnectivityView.swift
+//  BestNodesByConnectivityView.swift
 //  BestConnLigthning
 //
 //  Created by Ramon Santos on 02/07/24.
@@ -8,30 +8,30 @@
 import SwiftUI
 import Shimmer
 
-// MARK: BestNodeConnectivityView
+// MARK: BestNodesByConnectivityView
 
-struct BestNodeConnectivityView: View {
+struct BestNodesByConnectivityView: View {
 
-    @StateObject private var viewModel = BestConnectionsViewModel()
+    @StateObject private var viewModel = BestNodeConnectivityViewModel()
 
     var body: some View {
         NavigationStack {
-            List(viewModel.nodes, id: \.id) { node in
-                BestNodeConnectivityItemView(node: node)
+            List(viewModel.nodes, id: \.publicKey) { node in
+                BestNodesByConnectivityItemView(node: node)
                     .listRowSeparator(.hidden)
                     .disabled(viewModel.isLoading)
                     .opacity(viewModel.isLoading ? 0 : 1)
             }
-            .lineSpacing(2)
             .listStyle(.plain)
+            .listRowSpacing(2)
             .listRowSeparator(.hidden)
             .refreshable {
-                viewModel.getBestConnections()
+                Task { await viewModel.getBestConnections() }
             }
             .navigationTitle("Best connectivity")
             .overlay {
                 if viewModel.isLoading {
-                    BestNodeConnectivityLoadingView()
+                    BestNodesByConnectivityLoadingView()
                 }
             }
             .alert(isPresented: .constant(viewModel.hasFailure)) {
@@ -40,20 +40,20 @@ struct BestNodeConnectivityView: View {
                     message: Text("Failed to load data."),
                     dismissButton: Alert.Button.destructive(
                         Text("Reload"),
-                        action: { viewModel.getBestConnections() }
+                        action: {
+                            Task { await viewModel.getBestConnections() }
+                        }
                     )
                 )
             }
             .listRowSeparator(.hidden)
         }
-        .onAppear {
-            viewModel.getBestConnections()
-        }
+        .task { await viewModel.getBestConnections() }
     }
 }
 
 // MARK: - Preview
 
 #Preview {
-    BestNodeConnectivityView()
+    BestNodesByConnectivityView()
 }
