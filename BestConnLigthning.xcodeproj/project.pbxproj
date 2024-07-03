@@ -17,7 +17,6 @@
 		275260D42C3430B9001F50C2 /* BestConnLigthningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */; };
 		275260D82C3430BB001F50C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260D72C3430BB001F50C2 /* Assets.xcassets */; };
 		275260DC2C3430BB001F50C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260DB2C3430BB001F50C2 /* Preview Assets.xcassets */; };
-		275260E62C3430BC001F50C2 /* BestConnLigthningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260E52C3430BC001F50C2 /* BestConnLigthningTests.swift */; };
 		275261032C343F0D001F50C2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 275261022C343F0D001F50C2 /* Moya */; };
 		27D11A662C3444880070A2F0 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A652C3444880070A2F0 /* NetworkConfig.swift */; };
 		27D11A682C3445C60070A2F0 /* LightningEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */; };
@@ -32,7 +31,7 @@
 		27D11A882C347D640070A2F0 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 27D11A872C347D640070A2F0 /* Shimmer */; };
 		27D11A8A2C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A892C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift */; };
 		27D11A8C2C34BD270070A2F0 /* Cryptocurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */; };
-		27D11A8E2C34CB5D0070A2F0 /* Locales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A8D2C34CB5D0070A2F0 /* Locales.swift */; };
+		27D11A8E2C34CB5D0070A2F0 /* LocalesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A8D2C34CB5D0070A2F0 /* LocalesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +64,6 @@
 		275260D92C3430BB001F50C2 /* BestConnLigthning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestConnLigthning.entitlements; sourceTree = "<group>"; };
 		275260DB2C3430BB001F50C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		275260E12C3430BC001F50C2 /* BestConnLigthningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestConnLigthningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		275260E52C3430BC001F50C2 /* BestConnLigthningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningTests.swift; sourceTree = "<group>"; };
 		275260EB2C3430BC001F50C2 /* BestConnLigthningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestConnLigthningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D11A652C3444880070A2F0 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningEndpoint.swift; sourceTree = "<group>"; };
@@ -79,7 +77,7 @@
 		27D11A842C347A700070A2F0 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		27D11A892C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodesByConnectivityLoadingView.swift; sourceTree = "<group>"; };
 		27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrencies.swift; sourceTree = "<group>"; };
-		27D11A8D2C34CB5D0070A2F0 /* Locales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locales.swift; sourceTree = "<group>"; };
+		27D11A8D2C34CB5D0070A2F0 /* LocalesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 		2717D9452C35A72E00474F95 /* Lightning */ = {
 			isa = PBXGroup;
 			children = (
-				2717D93F2C35A4F400474F95 /* LightningRepository.swift */,
 				2717D9412C35A67000474F95 /* LightningRemoteRepository.swift */,
 			);
 			path = Lightning;
@@ -168,6 +165,30 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		2717D9542C360BDD00474F95 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				2717D9552C360BEE00474F95 /* Repository */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		2717D9552C360BEE00474F95 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2717D9562C360BFC00474F95 /* Lightning */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2717D9562C360BFC00474F95 /* Lightning */ = {
+			isa = PBXGroup;
+			children = (
+				2717D93F2C35A4F400474F95 /* LightningRepository.swift */,
+			);
+			path = Lightning;
+			sourceTree = "<group>";
+		};
 		275260C72C3430B9001F50C2 = {
 			isa = PBXGroup;
 			children = (
@@ -195,9 +216,7 @@
 				27D11A772C34564E0070A2F0 /* Domain */,
 				27D11A6B2C3448F40070A2F0 /* Presentation */,
 				2717D94D2C35AC9000474F95 /* DI */,
-				27D11A762C3456360070A2F0 /* Resources */,
-				27D11A792C3456680070A2F0 /* Config */,
-				27D11A832C347A560070A2F0 /* Support */,
+				27D11A832C347A560070A2F0 /* Utilities */,
 				275260DA2C3430BB001F50C2 /* Preview Content */,
 			);
 			path = BestConnLigthning;
@@ -214,7 +233,6 @@
 		275260E42C3430BC001F50C2 /* BestConnLigthningTests */ = {
 			isa = PBXGroup;
 			children = (
-				275260E52C3430BC001F50C2 /* BestConnLigthningTests.swift */,
 				2717D9522C35F81500474F95 /* NodeTests.swift */,
 			);
 			path = BestConnLigthningTests;
@@ -225,8 +243,8 @@
 			children = (
 				27D11A6A2C3448A20070A2F0 /* Network */,
 				2717D9432C35A71900474F95 /* DataSource */,
-				2717D93E2C35A4CA00474F95 /* Repository */,
-				27D11A732C344DC50070A2F0 /* Entity */,
+				27D11A732C344DC50070A2F0 /* DTO */,
+				2717D9542C360BDD00474F95 /* Interfaces */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -257,12 +275,13 @@
 			path = BestNodesByConnectivity;
 			sourceTree = "<group>";
 		};
-		27D11A732C344DC50070A2F0 /* Entity */ = {
+		27D11A732C344DC50070A2F0 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
 				27D11A712C344DC10070A2F0 /* NodeResponse.swift */,
+				27D11A8D2C34CB5D0070A2F0 /* LocalesResponse.swift */,
 			);
-			path = Entity;
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		27D11A762C3456360070A2F0 /* Resources */ = {
@@ -277,6 +296,7 @@
 		27D11A772C34564E0070A2F0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				2717D93E2C35A4CA00474F95 /* Repository */,
 				27D11A782C3456550070A2F0 /* Entity */,
 			);
 			path = Domain;
@@ -286,7 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				27D11A742C344F250070A2F0 /* Node.swift */,
-				27D11A8D2C34CB5D0070A2F0 /* Locales.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -326,13 +345,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		27D11A832C347A560070A2F0 /* Support */ = {
+		27D11A832C347A560070A2F0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				27D11A762C3456360070A2F0 /* Resources */,
+				27D11A792C3456680070A2F0 /* Config */,
 				2717D9512C35B4B100474F95 /* Enum */,
 				2717D9502C35B4A700474F95 /* Extension */,
 			);
-			path = Support;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,7 +513,7 @@
 				27D11A682C3445C60070A2F0 /* LightningEndpoint.swift in Sources */,
 				27D11A8A2C347E4B0070A2F0 /* BestNodesByConnectivityLoadingView.swift in Sources */,
 				27D11A802C3477FA0070A2F0 /* BestNodesByConnectityItemInfoView.swift in Sources */,
-				27D11A8E2C34CB5D0070A2F0 /* Locales.swift in Sources */,
+				27D11A8E2C34CB5D0070A2F0 /* LocalesResponse.swift in Sources */,
 				27D11A752C344F250070A2F0 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +522,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275260E62C3430BC001F50C2 /* BestConnLigthningTests.swift in Sources */,
 				2717D9532C35F81500474F95 /* NodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,7 +668,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BestConnLigthning/Config/BestConnLigthning.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BestConnLigthning/Utilities/Config/BestConnLigthning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BestConnLigthning/Preview Content\"";
@@ -686,7 +706,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BestConnLigthning/Config/BestConnLigthning.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BestConnLigthning/Utilities/Config/BestConnLigthning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BestConnLigthning/Preview Content\"";

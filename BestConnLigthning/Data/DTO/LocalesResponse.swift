@@ -1,5 +1,5 @@
 //
-//  Locales.swift
+//  LocalesResponse.swift
 //  BestConnLigthning
 //
 //  Created by Ramon Santos on 02/07/24.
@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Locales: Codable {
+// MARK: - LocalesResponse
+
+struct LocalesResponse: Decodable {
     let de, en, es, fr: String?
     let ja, ptBR, ru, zhCN: String?
 
@@ -19,7 +21,7 @@ struct Locales: Codable {
     }
 }
 
-extension Locales {
+extension LocalesResponse {
     /// Retun the default String value
     /// Get value for ptBR if exists else get value for en.
     var `default`: String? { ptBR ?? en }

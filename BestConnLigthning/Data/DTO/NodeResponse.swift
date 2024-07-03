@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - NodeResponse
 
-struct NodeResponse: Codable {
+struct NodeResponse: Decodable {
 
     let publicKey: String?
     let alias: String?
@@ -17,8 +17,8 @@ struct NodeResponse: Codable {
     let capacity: Double?
     let firstSeen: Int64?
     let updatedAt: Int64?
-    let city: Locales?
-    let country: Locales?
+    let city: LocalesResponse?
+    let country: LocalesResponse?
     let isoCode: String?
     let subdivision: String?
 
@@ -37,6 +37,8 @@ struct NodeResponse: Codable {
 }
 
 typealias NodesResponse = [NodeResponse]
+
+// MARK: - Mappings to Node
 
 extension NodeResponse {
     func toNode() -> Node {
