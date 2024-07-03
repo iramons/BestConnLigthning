@@ -9,5 +9,5 @@ import Foundation
 
 enum Cryptocurrencies {
     static let satoshi: Double = 000000001
-    static let bitcoin: Double = 100000000
+    static let bitcoin: Double = satoshi * 100000000
 }

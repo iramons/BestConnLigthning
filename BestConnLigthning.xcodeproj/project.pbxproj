@@ -13,6 +13,7 @@
 		2717D94A2C35ABE500474F95 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 2717D9492C35ABE500474F95 /* Resolver */; };
 		2717D94C2C35AC8C00474F95 /* Resolver+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717D94B2C35AC8C00474F95 /* Resolver+Register.swift */; };
 		2717D94F2C35B17C00474F95 /* Moya+Async+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717D94E2C35B17C00474F95 /* Moya+Async+Ext.swift */; };
+		2717D9532C35F81500474F95 /* NodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717D9522C35F81500474F95 /* NodeTests.swift */; };
 		275260D42C3430B9001F50C2 /* BestConnLigthningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */; };
 		275260D82C3430BB001F50C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260D72C3430BB001F50C2 /* Assets.xcassets */; };
 		275260DC2C3430BB001F50C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260DB2C3430BB001F50C2 /* Preview Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		2717D9462C35A74900474F95 /* LightningRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningRemoteDataSource.swift; sourceTree = "<group>"; };
 		2717D94B2C35AC8C00474F95 /* Resolver+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Register.swift"; sourceTree = "<group>"; };
 		2717D94E2C35B17C00474F95 /* Moya+Async+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Async+Ext.swift"; sourceTree = "<group>"; };
+		2717D9522C35F81500474F95 /* NodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTests.swift; sourceTree = "<group>"; };
 		275260D02C3430B9001F50C2 /* BestConnLigthning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestConnLigthning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningApp.swift; sourceTree = "<group>"; };
 		275260D72C3430BB001F50C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				275260E52C3430BC001F50C2 /* BestConnLigthningTests.swift */,
+				2717D9522C35F81500474F95 /* NodeTests.swift */,
 			);
 			path = BestConnLigthningTests;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				275260E62C3430BC001F50C2 /* BestConnLigthningTests.swift in Sources */,
+				2717D9532C35F81500474F95 /* NodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
