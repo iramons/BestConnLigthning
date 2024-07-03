@@ -18,8 +18,6 @@
 		275260D82C3430BB001F50C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260D72C3430BB001F50C2 /* Assets.xcassets */; };
 		275260DC2C3430BB001F50C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275260DB2C3430BB001F50C2 /* Preview Assets.xcassets */; };
 		275260E62C3430BC001F50C2 /* BestConnLigthningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260E52C3430BC001F50C2 /* BestConnLigthningTests.swift */; };
-		275260F02C3430BC001F50C2 /* BestConnLigthningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260EF2C3430BC001F50C2 /* BestConnLigthningUITests.swift */; };
-		275260F22C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275260F12C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift */; };
 		275261032C343F0D001F50C2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 275261022C343F0D001F50C2 /* Moya */; };
 		27D11A662C3444880070A2F0 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A652C3444880070A2F0 /* NetworkConfig.swift */; };
 		27D11A682C3445C60070A2F0 /* LightningEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */; };
@@ -69,8 +67,6 @@
 		275260E12C3430BC001F50C2 /* BestConnLigthningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestConnLigthningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		275260E52C3430BC001F50C2 /* BestConnLigthningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningTests.swift; sourceTree = "<group>"; };
 		275260EB2C3430BC001F50C2 /* BestConnLigthningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestConnLigthningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		275260EF2C3430BC001F50C2 /* BestConnLigthningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningUITests.swift; sourceTree = "<group>"; };
-		275260F12C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestConnLigthningUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		27D11A652C3444880070A2F0 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningEndpoint.swift; sourceTree = "<group>"; };
 		27D11A6C2C3449250070A2F0 /* BestNodesByConnectivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodesByConnectivityView.swift; sourceTree = "<group>"; };
@@ -177,7 +173,6 @@
 			children = (
 				275260D22C3430B9001F50C2 /* BestConnLigthning */,
 				275260E42C3430BC001F50C2 /* BestConnLigthningTests */,
-				275260EE2C3430BC001F50C2 /* BestConnLigthningUITests */,
 				275260D12C3430B9001F50C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -223,15 +218,6 @@
 				2717D9522C35F81500474F95 /* NodeTests.swift */,
 			);
 			path = BestConnLigthningTests;
-			sourceTree = "<group>";
-		};
-		275260EE2C3430BC001F50C2 /* BestConnLigthningUITests */ = {
-			isa = PBXGroup;
-			children = (
-				275260EF2C3430BC001F50C2 /* BestConnLigthningUITests.swift */,
-				275260F12C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift */,
-			);
-			path = BestConnLigthningUITests;
 			sourceTree = "<group>";
 		};
 		27D11A692C3448930070A2F0 /* Data */ = {
@@ -524,8 +510,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275260F02C3430BC001F50C2 /* BestConnLigthningUITests.swift in Sources */,
-				275260F22C3430BC001F50C2 /* BestConnLigthningUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
