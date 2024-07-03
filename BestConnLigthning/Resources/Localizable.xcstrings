@@ -1,7 +1,19 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "Best connectivity" : {
+
+    },
+    "Failed to load data." : {
+
+    },
+    "Ops" : {
+
+    },
+    "Reload" : {
 
     }
   },

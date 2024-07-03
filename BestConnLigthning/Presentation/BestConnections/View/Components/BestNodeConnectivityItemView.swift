@@ -19,9 +19,11 @@ struct BestNodeConnectivityItemView: View {
             BestNodeConnectityItemInfoView(title: "Public Key:", value: node.publicKey)
             BestNodeConnectityItemInfoView(title: "Alias:", value: node.alias)
             BestNodeConnectityItemInfoView(title: "Channels:", value: node.channels.description)
-            BestNodeConnectityItemInfoView(title: "Capacity:", value: node.capacity.description)
-            BestNodeConnectityItemInfoView(title: "First seen:", value: node.firstSeen.description)
-            BestNodeConnectityItemInfoView(title: "Updated at:", value: node.updatedAt.description)
+            BestNodeConnectityItemInfoView(title: "Capacity:", value: node.bitcoinDescription)
+            BestNodeConnectityItemInfoView(title: "First seen:", value: node.firstSeen.formatted(.dateTime))
+            BestNodeConnectityItemInfoView(title: "Updated at:", value: node.updatedAt.formatted(.dateTime))
+            BestNodeConnectityItemInfoView(title: "City:", value: node.city?.description)
+            BestNodeConnectityItemInfoView(title: "Country:", value: node.country?.description)
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -35,6 +37,6 @@ struct BestNodeConnectivityItemView: View {
 // MARK: - Preview
 
 #Preview {
-    let mock = Node(publicKey: "xYxdAzsFghHtE", alias: "Node test", channels: 13, capacity: 121, firstSeen: 1434343, updatedAt: 234343434, city: nil, country: nil, isoCode: "isoCodeExtSghtr", subdivision: "StringSubsci")
+    let mock = Node(publicKey: "xYxdAzsFghHtE", alias: "Node test", channels: 13, capacity: 121, firstSeen: Date(), updatedAt: Date(), city: nil, country: nil, isoCode: "isoCodeExtSghtr", subdivision: "StringSubsci")
     return BestNodeConnectivityItemView(node: mock)
 }

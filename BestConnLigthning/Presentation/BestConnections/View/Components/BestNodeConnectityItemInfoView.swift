@@ -12,14 +12,15 @@ import SwiftUI
 struct BestNodeConnectityItemInfoView: View {
 
     @State var title: String
-    @State var value: String
+    @State var value: String?
 
     var body: some View {
         HStack(alignment: .top) {
-            Text(title)
-                .bold()
-
-            Text(value)
+            if let value {
+                Text(title)
+                    .bold()
+                Text(value)
+            }
         }
     }
 }

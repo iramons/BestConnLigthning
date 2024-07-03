@@ -7,18 +7,20 @@
 
 import Foundation
 
+typealias NodesResponse = [NodeResponse]
+
 // MARK: - NodeResponse
 
 struct NodeResponse: Codable {
 
     let publicKey: String?
     let alias: String?
-    let channels: Int?
-    let capacity: Int?
-    let firstSeen: Int?
-    let updatedAt: Int?
-    let city: [String: String]?
-    let country: [String: String]?
+    let channels: Double?
+    let capacity: Double?
+    let firstSeen: Int64?
+    let updatedAt: Int64?
+    let city: Locales?
+    let country: Locales?
     let isoCode: String?
     let subdivision: String?
 
@@ -29,8 +31,6 @@ struct NodeResponse: Codable {
     }
 }
 
-typealias NodesResponse = [NodeResponse]
-
 extension NodeResponse {
     func toNode() -> Node {
         return Node(
@@ -38,10 +38,10 @@ extension NodeResponse {
             alias: alias ?? "",
             channels: channels ?? 0,
             capacity: capacity ?? 0,
-            firstSeen: firstSeen ?? 0,
-            updatedAt: updatedAt ?? 0,
-            city: city,
-            country: country,
+            firstSeen: Date(timeIntervalSince1970: TimeInterval(firstSeen ?? 0)),
+            updatedAt: Date(timeIntervalSince1970: TimeInterval(updatedAt ?? 0)),
+            city: city?.default,
+            country: country?.default,
             isoCode: isoCode ?? "",
             subdivision: subdivision ?? ""
         )

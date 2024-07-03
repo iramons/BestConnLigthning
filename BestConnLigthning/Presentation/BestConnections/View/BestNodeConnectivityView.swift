@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Shimmer
 
 // MARK: BestNodeConnectivityView
 
@@ -18,6 +19,8 @@ struct BestNodeConnectivityView: View {
             List(viewModel.nodes, id: \.id) { node in
                 BestNodeConnectivityItemView(node: node)
                     .listRowSeparator(.hidden)
+                    .disabled(viewModel.isLoading)
+                    .opacity(viewModel.isLoading ? 0 : 1)
             }
             .lineSpacing(2)
             .listStyle(.plain)
@@ -28,9 +31,20 @@ struct BestNodeConnectivityView: View {
             .navigationTitle("Best connectivity")
             .overlay {
                 if viewModel.isLoading {
-                    ProgressView()
+                    BestNodeConnectivityLoadingView()
                 }
             }
+            .alert(isPresented: .constant(viewModel.hasFailure)) {
+                Alert(
+                    title: Text("Ops"),
+                    message: Text("Failed to load data."),
+                    dismissButton: Alert.Button.destructive(
+                        Text("Reload"),
+                        action: { viewModel.getBestConnections() }
+                    )
+                )
+            }
+            .listRowSeparator(.hidden)
         }
         .onAppear {
             viewModel.getBestConnections()

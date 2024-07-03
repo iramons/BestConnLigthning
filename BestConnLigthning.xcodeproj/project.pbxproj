@@ -24,6 +24,10 @@
 		27D11A802C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */; };
 		27D11A822C3478820070A2F0 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27D11A812C3478820070A2F0 /* Localizable.xcstrings */; };
 		27D11A852C347A700070A2F0 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A842C347A700070A2F0 /* LoadingState.swift */; };
+		27D11A882C347D640070A2F0 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 27D11A872C347D640070A2F0 /* Shimmer */; };
+		27D11A8A2C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A892C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift */; };
+		27D11A8C2C34BD270070A2F0 /* Cryptocurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */; };
+		27D11A8E2C34CB5D0070A2F0 /* Locales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D11A8D2C34CB5D0070A2F0 /* Locales.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,9 @@
 		27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectityItemInfoView.swift; sourceTree = "<group>"; };
 		27D11A812C3478820070A2F0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		27D11A842C347A700070A2F0 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		27D11A892C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodeConnectivityLoadingView.swift; sourceTree = "<group>"; };
+		27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrencies.swift; sourceTree = "<group>"; };
+		27D11A8D2C34CB5D0070A2F0 /* Locales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locales.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D11A882C347D640070A2F0 /* Shimmer in Frameworks */,
 				275261032C343F0D001F50C2 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				275260D32C3430B9001F50C2 /* BestConnLigthningApp.swift */,
-				27D11A772C34564E0070A2F0 /* Domain */,
 				27D11A692C3448930070A2F0 /* DataProvider */,
+				27D11A772C34564E0070A2F0 /* Domain */,
 				27D11A6B2C3448F40070A2F0 /* Presentation */,
 				27D11A762C3456360070A2F0 /* Resources */,
 				27D11A792C3456680070A2F0 /* Config */,
@@ -216,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				27D11A742C344F250070A2F0 /* Node.swift */,
+				27D11A8D2C34CB5D0070A2F0 /* Locales.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			children = (
 				27D11A7A2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift */,
 				27D11A7F2C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift */,
+				27D11A892C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -258,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				27D11A842C347A700070A2F0 /* LoadingState.swift */,
+				27D11A8B2C34BD260070A2F0 /* Cryptocurrencies.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -280,6 +291,7 @@
 			name = BestConnLigthning;
 			packageProductDependencies = (
 				275261022C343F0D001F50C2 /* Moya */,
+				27D11A872C347D640070A2F0 /* Shimmer */,
 			);
 			productName = BestConnLigthning;
 			productReference = 275260D02C3430B9001F50C2 /* BestConnLigthning.app */;
@@ -355,6 +367,7 @@
 			mainGroup = 275260C72C3430B9001F50C2;
 			packageReferences = (
 				275261012C343F0D001F50C2 /* XCRemoteSwiftPackageReference "Moya" */,
+				27D11A862C347D640070A2F0 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 			);
 			productRefGroup = 275260D12C3430B9001F50C2 /* Products */;
 			projectDirPath = "";
@@ -404,10 +417,13 @@
 				27D11A852C347A700070A2F0 /* LoadingState.swift in Sources */,
 				27D11A7B2C3465B90070A2F0 /* BestNodeConnectivityItemView.swift in Sources */,
 				27D11A722C344DC10070A2F0 /* NodeResponse.swift in Sources */,
+				27D11A8C2C34BD270070A2F0 /* Cryptocurrencies.swift in Sources */,
 				27D11A6D2C3449250070A2F0 /* BestNodeConnectivityView.swift in Sources */,
 				27D11A6F2C3449360070A2F0 /* BestConnectionsViewModel.swift in Sources */,
 				27D11A682C3445C60070A2F0 /* LightningEndpoint.swift in Sources */,
+				27D11A8A2C347E4B0070A2F0 /* BestNodeConnectivityLoadingView.swift in Sources */,
 				27D11A802C3477FA0070A2F0 /* BestNodeConnectityItemInfoView.swift in Sources */,
+				27D11A8E2C34CB5D0070A2F0 /* Locales.swift in Sources */,
 				27D11A752C344F250070A2F0 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -775,6 +791,14 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		27D11A862C347D640070A2F0 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -782,6 +806,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 275261012C343F0D001F50C2 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		27D11A872C347D640070A2F0 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27D11A862C347D640070A2F0 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

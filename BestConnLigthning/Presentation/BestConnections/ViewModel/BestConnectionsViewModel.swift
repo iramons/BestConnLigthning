@@ -8,23 +8,29 @@
 import Foundation
 import Moya
 
+// MARK: BestConnectionsViewModel
+
 class BestConnectionsViewModel: ObservableObject {
 
     @Published private(set) var nodes: [Node] = []
     @Published var loadingState: LoadingState = .none
     var isLoading: Bool { loadingState == .loading }
-    
-    private var provider = MoyaProvider<LightningEndpoint>(plugins: [NetworkConfig.networkLogger])
+    var hasFailure: Bool { loadingState == .failure }
 
-    @MainActor
+    private var provider = MoyaProvider<LightningEndpoint>(plugins: [NetworkConfig.networkLogger])
+}
+
+// MARK: Requests
+
+extension BestConnectionsViewModel {
+
     func getBestConnections() {
         loadingState = .loading
 
-        provider.request(.rankingsByConnectivity) { result in
+        provider.request(.rankingsByConnectivity) { [weak self] result in
+            guard let self else { return }
             switch result {
             case .success(let response):
-                print(response)
-
                 do {
                     let nodesResponse = try response.map(NodesResponse.self, failsOnEmptyData: true)
 
@@ -38,15 +44,16 @@ class BestConnectionsViewModel: ObservableObject {
                         guard let self else { return }
                         self.nodes = newNodes
                     }
+                    loadingState = .success
                 } catch {
+                    loadingState = .failure
                     print(error)
                 }
 
             case .failure(let error):
+                loadingState = .failure
                 print(error)
             }
         }
-
-        loadingState = .none
     }
 }
