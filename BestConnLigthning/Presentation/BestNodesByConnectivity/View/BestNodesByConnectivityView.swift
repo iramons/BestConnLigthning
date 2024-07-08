@@ -19,12 +19,9 @@ struct BestNodesByConnectivityView: View {
             List(viewModel.nodes, id: \.publicKey) { node in
                 BestNodesByConnectivityItemView(node: node)
                     .listRowSeparator(.hidden)
-                    .disabled(viewModel.isLoading)
-                    .opacity(viewModel.isLoading ? 0 : 1)
             }
             .listStyle(.plain)
             .listRowSpacing(2)
-            .listRowSeparator(.hidden)
             .refreshable {
                 Task { await viewModel.getBestConnections() }
             }
@@ -46,7 +43,6 @@ struct BestNodesByConnectivityView: View {
                     )
                 )
             }
-            .listRowSeparator(.hidden)
         }
         .task { await viewModel.getBestConnections() }
     }
