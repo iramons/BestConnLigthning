@@ -8,5 +8,5 @@
 import Foundation
 
 protocol LightningRepository {
-    func getRankingsByConnectivity() async throws -> Nodes
+    func getBestNodesByConnectivity() async throws -> Nodes
 }

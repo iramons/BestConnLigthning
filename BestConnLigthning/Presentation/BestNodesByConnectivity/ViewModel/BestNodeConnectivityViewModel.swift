@@ -25,10 +25,10 @@ class BestNodeConnectivityViewModel: ObservableObject {
 extension BestNodeConnectivityViewModel {
 
     @MainActor
-    func getBestConnections() async {
+    func fetchBestNodesByConnectivity() async {
         viewState = .loading
         do {
-            let nodes = try await lightningRepository.getRankingsByConnectivity()
+            let nodes = try await lightningRepository.getBestNodesByConnectivity()
             self.nodes = nodes
             viewState = .success
         } catch {

@@ -23,7 +23,7 @@ struct BestNodesByConnectivityView: View {
             .listStyle(.plain)
             .listRowSpacing(2)
             .refreshable {
-                Task { await viewModel.getBestConnections() }
+                Task { await viewModel.fetchBestNodesByConnectivity() }
             }
             .navigationTitle("Best connectivity")
             .overlay {
@@ -38,13 +38,13 @@ struct BestNodesByConnectivityView: View {
                     dismissButton: Alert.Button.destructive(
                         Text("Reload"),
                         action: {
-                            Task { await viewModel.getBestConnections() }
+                            Task { await viewModel.fetchBestNodesByConnectivity() }
                         }
                     )
                 )
             }
         }
-        .task { await viewModel.getBestConnections() }
+        .task { await viewModel.fetchBestNodesByConnectivity() }
     }
 }
 
