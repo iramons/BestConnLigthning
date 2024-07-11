@@ -25,6 +25,7 @@ struct BestNodesByConnectivityLoadingView: View {
                 }
             }
         }
+        .background(.thinMaterial)
     }
 }
 
