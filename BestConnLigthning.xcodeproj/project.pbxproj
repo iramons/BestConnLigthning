@@ -42,13 +42,6 @@
 			remoteGlobalIDString = 275260CF2C3430B9001F50C2;
 			remoteInfo = BestConnLigthning;
 		};
-		275260EC2C3430BC001F50C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 275260C82C3430B9001F50C2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 275260CF2C3430B9001F50C2;
-			remoteInfo = BestConnLigthning;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +57,6 @@
 		275260D92C3430BB001F50C2 /* BestConnLigthning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestConnLigthning.entitlements; sourceTree = "<group>"; };
 		275260DB2C3430BB001F50C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		275260E12C3430BC001F50C2 /* BestConnLigthningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestConnLigthningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		275260EB2C3430BC001F50C2 /* BestConnLigthningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestConnLigthningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D11A652C3444880070A2F0 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		27D11A672C3445C60070A2F0 /* LightningEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningEndpoint.swift; sourceTree = "<group>"; };
 		27D11A6C2C3449250070A2F0 /* BestNodesByConnectivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNodesByConnectivityView.swift; sourceTree = "<group>"; };
@@ -92,13 +84,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		275260DE2C3430BC001F50C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		275260E82C3430BC001F50C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,7 +188,6 @@
 			children = (
 				275260D02C3430B9001F50C2 /* BestConnLigthning.app */,
 				275260E12C3430BC001F50C2 /* BestConnLigthningTests.xctest */,
-				275260EB2C3430BC001F50C2 /* BestConnLigthningUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -399,24 +383,6 @@
 			productReference = 275260E12C3430BC001F50C2 /* BestConnLigthningTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		275260EA2C3430BC001F50C2 /* BestConnLigthningUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 275260FB2C3430BC001F50C2 /* Build configuration list for PBXNativeTarget "BestConnLigthningUITests" */;
-			buildPhases = (
-				275260E72C3430BC001F50C2 /* Sources */,
-				275260E82C3430BC001F50C2 /* Frameworks */,
-				275260E92C3430BC001F50C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				275260ED2C3430BC001F50C2 /* PBXTargetDependency */,
-			);
-			name = BestConnLigthningUITests;
-			productName = BestConnLigthningUITests;
-			productReference = 275260EB2C3430BC001F50C2 /* BestConnLigthningUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -431,10 +397,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					275260E02C3430BC001F50C2 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 275260CF2C3430B9001F50C2;
-					};
-					275260EA2C3430BC001F50C2 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 275260CF2C3430B9001F50C2;
 					};
@@ -460,7 +422,6 @@
 			targets = (
 				275260CF2C3430B9001F50C2 /* BestConnLigthning */,
 				275260E02C3430BC001F50C2 /* BestConnLigthningTests */,
-				275260EA2C3430BC001F50C2 /* BestConnLigthningUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -477,13 +438,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		275260DF2C3430BC001F50C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		275260E92C3430BC001F50C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -526,13 +480,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		275260E72C3430BC001F50C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -540,11 +487,6 @@
 			isa = PBXTargetDependency;
 			target = 275260CF2C3430B9001F50C2 /* BestConnLigthning */;
 			targetProxy = 275260E22C3430BC001F50C2 /* PBXContainerItemProxy */;
-		};
-		275260ED2C3430BC001F50C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 275260CF2C3430B9001F50C2 /* BestConnLigthning */;
-			targetProxy = 275260EC2C3430BC001F50C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -785,50 +727,6 @@
 			};
 			name = Release;
 		};
-		275260FC2C3430BC001F50C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78X7SZ5896;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ramonsantos.BestConnLigthningUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BestConnLigthning;
-			};
-			name = Debug;
-		};
-		275260FD2C3430BC001F50C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 78X7SZ5896;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ramonsantos.BestConnLigthningUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BestConnLigthning;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -855,15 +753,6 @@
 			buildConfigurations = (
 				275260F92C3430BC001F50C2 /* Debug */,
 				275260FA2C3430BC001F50C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		275260FB2C3430BC001F50C2 /* Build configuration list for PBXNativeTarget "BestConnLigthningUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				275260FC2C3430BC001F50C2 /* Debug */,
-				275260FD2C3430BC001F50C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
